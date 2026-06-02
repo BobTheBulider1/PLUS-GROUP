@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Group Temizlik - Profesyonel Hijyen & Detaylı Temizlik Çözümleri</title>
+    <meta name="description" content="Evinizden şantiyelere, ticari alanlardan AVM'lere kadar tüm mekanları titizlikle temizliyoruz. Doğaya dost, uzman kadrolu butik temizlik hizmetleri.">
+    
+    <!-- Google Fonts: Sora (Heading) + Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-link" id="logo-link">
+                <div class="custom-logo">
+                    <svg class="brand-logo-svg" width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0d9488" />
+                                <stop offset="50%" stop-color="#14b8a6" />
+                                <stop offset="100%" stop-color="#ffd700" />
+                            </linearGradient>
+                            <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="2" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        <path d="M 50,5 A 45,45 0 1,0 95,50 A 45,45 0 0,0 50,5 Z" fill="none" stroke="url(#logoGrad)" stroke-width="6" stroke-dasharray="280" stroke-dashoffset="0" />
+                        <path d="M 35,50 H 65 M 50,35 V 65" stroke="url(#logoGrad)" stroke-width="8" stroke-linecap="round" />
+                        <path d="M 72,18 L 74,24 L 80,26 L 74,28 L 72,34 L 70,28 L 64,26 L 70,24 Z" fill="#ffd700" filter="url(#logoGlow)" />
+                    </svg>
+                    <span class="logo-text">Plus <span class="logo-highlight">Group</span></span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#anasayfa" class="nav-link active">Anasayfa</a>
+                <a href="#hakkimizda" class="nav-link">Hikayemiz</a>
+                <a href="#hizmetler" class="nav-link">Hizmetler</a>
+                <a href="#galeri" class="nav-link">Öncesi/Sonrası</a>
+                <a href="#surec" class="nav-link">Çalışma Şeklimiz</a>
+                <a href="#iletisim" class="nav-link btn-nav">Teklif Al</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <nav class="mobile-nav-links">
+            <a href="#anasayfa" class="mobile-link">Anasayfa</a>
+            <a href="#hakkimizda" class="mobile-link">Hikayemiz</a>
+            <a href="#hizmetler" class="mobile-link">Hizmetler</a>
+            <a href="#galeri" class="mobile-link">Öncesi/Sonrası</a>
+            <a href="#surec" class="mobile-link">Çalışma Şeklimiz</a>
+            <a href="#iletisim" class="mobile-link btn-mobile-cta">Teklif Al</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="anasayfa" style="background-image: linear-gradient(to bottom, rgba(10, 15, 30, 0.75), rgba(10, 15, 30, 0.9)), url('images/banner.jpeg');">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-tag"><span class="tag-gold-dot"></span> Güvenilir & Sertifikalı Hijyen Standardı</div>
+                <h1 class="hero-title">Yaşam alanlarınıza ince bir dokunuş, <span class="serif-italic-gradient">kusursuz bir ferahlık.</span></h1>
+                <p class="hero-subtitle">Evinizden iş yerlerinize, şantiyelerden dev ticari alanlara kadar her köşeyi büyük bir titizlikle parlatıyoruz. Profesyonel ekibimiz ve çevre dostu teknolojilerimizle size sadece temizliğin keyfini sürmek kalıyor.</p>
+                <div class="hero-actions">
+                    <a href="#teklif-modal" class="btn btn-primary" id="open-teklif-btn"><i class="fa-solid fa-calculator"></i> Hemen Teklif Al</a>
+                    <a href="#hizmetler" class="btn btn-outline"><i class="fa-solid fa-sparkles"></i> Hizmetlerimiz</a>
+                </div>
+            </div>
+            
+            <div class="hero-showcase">
+                <div class="showcase-card">
+                    <div class="showcase-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                    <h3>%100 Memnuniyet</h3>
+                    <p>Beğenmediğiniz tek bir detay kalmayana dek çalışıyoruz.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Ekolojik Ürünler</h3>
+                    <p>Doğaya ve sağlığınıza dost, sertifikalı hijyen formülleri.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.13,26.71,176.7,48.55,248.33,69.51,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Hakkımızda Section (Editorial & Asymmetric Layout) -->
+    <section class="about-section" id="hakkimizda">
+        <div class="container">
+            <div class="about-grid">
+                
+                <div class="about-intro-col">
+                    <span class="section-label">Biz Kimiz?</span>
+                    <h2>Geleceğe tertemiz bir sayfa açıyoruz.</h2>
+                    <div class="accent-bar"></div>
+                    <p class="about-lead">Kurulduğumuz günden bu yana, temizliği sıradan bir iş olarak değil, bir yaşam kalitesi standardı olarak görüyoruz.</p>
+                    <p>Profesyonel temizlik hizmetleri sunan, sektörde güven ve kalitenin adresi olmayı hedefleyen butik bir ekibiz. Ev, ofis, şantiye veya ticari alan fark etmeksizin, her projeye aynı özen ve detaycılıkla yaklaşıyoruz.</p>
+                </div>
+
+                <div class="about-features-col">
+                    <div class="features-vertical-flow">
+                        <!-- Staggered Card 1 -->
+                        <div class="staggered-card">
+                            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                            <div class="card-text">
+                                <h3>Eğitimli & Güvenilir Kadro</h3>
+                                <p>Alanında uzman, güler yüzlü ve referanslı temizlik personelleriyle çalışıyoruz.</p>
+                            </div>
+                        </div>
+
+                        <!-- Staggered Card 2 -->
+                        <div class="staggered-card">
+                            <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <div class="card-text">
+                                <h3>Çevre Dostu Teknolojiler</h3>
+                                <p>Sağlığınızı önemsiyor, doğaya ve insan sağlığına zarar vermeyen, sertifikalı ürünler kullanıyoruz.</p>
+                            </div>
+                        </div>
+
+                        <!-- Staggered Card 3 -->
+                        <div class="staggered-card">
+                            <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="card-text">
+                                <h3>Zamanında & Kusursuz</h3>
+                                <p>Söz verdiğimiz saatte orada oluyor, planlanan sürede işimizi eksiksiz teslim ediyoruz.</p>
+                            </div>
+                        </div>
+
+                        <!-- Staggered Card 4 -->
+                        <div class="staggered-card">
+                            <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+                            <div class="card-text">
+                                <h3>%100 Memnuniyet Garantisi</h3>
+                                <p>Sizin mutluluğunuz bizim başarımızdır. Beğenmediğiniz detayları çözüme kavuşturuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetlerimiz Section -->
+    <section class="services-section" id="hizmetler">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Çözümlerimiz</span>
+                <h2>Sizin İçin Neler Yapıyoruz?</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">İhtiyacınıza en uygun profesyonel temizlik çözümlerini titizlikle uyguluyoruz. Detayları incelemek için kartlara tıklayabilirsiniz.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-service="ev">
+                    <div class="service-img-container">
+                        <img src="images/service_home.png" alt="Ev Temizliği" class="service-img" loading="lazy">
+                        <div class="service-overlay">
+                            <span>İncele <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3>Ev Temizliği</h3>
+                        <p class="service-slogan">Eviniz en özel alanınız. Güvenli ellere emanet edin.</p>
+                        <p class="service-preview">Günlük hayatın koşuşturmacasında temizliğe vakit ayıramıyorsanız, profesyonel ev temizliği hizmetimizle yanınızdayız...</p>
+                        <button class="btn-card-more">Detaylı Bilgi</button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-service="apartman">
+                    <div class="service-img-container">
+                        <img src="images/service_building.png" alt="Apartman ve Site Temizliği" class="service-img" loading="lazy">
+                        <div class="service-overlay">
+                            <span>İncele <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Apartman & Site Temizliği</h3>
+                        <p class="service-slogan">Ortak yaşam alanlarında hijyen ve düzen bir arada.</p>
+                        <p class="service-preview">Apartman ve sitelerin temizliği, hem estetik hem de toplu yaşam sağlığı için büyük önem taşır. Periyodik çözümler sunuyoruz...</p>
+                        <button class="btn-card-more">Detaylı Bilgi</button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-service="santiye">
+                    <div class="service-img-container">
+                        <img src="images/service_construction.png" alt="Şantiye ve İnşaat Sonrası Temizlik" class="service-img" loading="lazy">
+                        <div class="service-overlay">
+                            <span>İncele <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                        <h3>Şantiye & İnşaat Sonrası</h3>
+                        <p class="service-slogan">Kaba pisliği unutun, anahtar teslim temizliğe odaklanın.</p>
+                        <p class="service-preview">İnşaat ya da tadilat sonrası temizlik, en zorlu temizlik türüdür. Donmuş harç, boya kalıntıları ve yoğun tozu arındırıyoruz...</p>
+                        <button class="btn-card-more">Detaylı Bilgi</button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-service="ticari">
+                    <div class="service-img-container">
+                        <img src="images/service_commercial.png" alt="AVM, Mağaza ve Dükkan Temizliği" class="service-img" loading="lazy">
+                        <div class="service-overlay">
+                            <span>İncele <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fa-solid fa-shop"></i></div>
+                        <h3>AVM & Mağaza Temizliği</h3>
+                        <p class="service-slogan">Müşterilerinizi ışıl ışıl bir alanda karşılayın.</p>
+                        <p class="service-preview">Ticari alanlarda temizlik, marka imajınızın en önemli parçasıdır. Yüksek insan trafiğine sahip mekanlar için esnek çözümler sunuyoruz...</p>
+                        <button class="btn-card-more">Detaylı Bilgi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details Modals -->
+    <div class="modal-wrapper" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-header-section">
+                <div class="modal-icon" id="modal-icon-holder"><i class="fa-solid fa-house"></i></div>
+                <h3 id="modal-title">Hizmet Detayı</h3>
+                <p class="modal-slogan" id="modal-slogan">Hizmet Sloganı</p>
+            </div>
+            <div class="modal-body-section">
+                <p id="modal-description">Hizmet açıklaması detaylı olarak buraya eklenecektir.</p>
+                <div class="modal-cta-box">
+                    <p>Bu hizmetimiz için hemen fiyat teklifi almak ister misiniz?</p>
+                    <a href="#teklif-modal" class="btn btn-primary" id="modal-teklif-cta">Fiyat Teklifi Al <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Before / After Gallery Section -->
+    <section class="gallery-section" id="galeri">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Gözle Görülür Fark</span>
+                <h2>Öncesi / Sonrası Karşılaştırması</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">Uyguladığımız derinlemesine hijyenin kalitesini kendi gözlerinizle görün. Kaydırıcıyı sağa-sola sürükleyerek salon temizliği farkını inceleyebilirsiniz.</p>
+            </div>
+
+            <div class="slider-wrapper">
+                <!-- Before/After Slider Component -->
+                <div class="before-after-slider" id="ba-slider">
+                    <!-- Background clean photo (revealed on right) -->
+                    <div class="img-container image-after" id="after-img-container">
+                        <img src="images/after_sofa.png" alt="Temizlik Sonrası" loading="lazy">
+                        <span class="badge badge-after">SONRASI (Temiz)</span>
+                    </div>
+                    <!-- Sliding dirty photo (layered on top, on left) -->
+                    <div class="img-container image-before" id="before-img-container">
+                        <img src="images/before_sofa.png" alt="Temizlik Öncesi" loading="lazy">
+                        <span class="badge badge-before">ÖNCESİ (Kirli)</span>
+                    </div>
+                    <!-- Drag handle -->
+                    <div class="slider-handle" id="slider-handle">
+                        <div class="handle-line"></div>
+                        <div class="handle-circle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                </div>
+                
+                <div class="slider-caption">
+                    <p><i class="fa-solid fa-wand-magic-sparkles"></i> Aynı görselin temizlik öncesi (filtreli tozlu) ve sonrası (parlak temiz) karşılaştırması</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Çalışma Sürecimiz Section -->
+    <section class="process-section" id="surec">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Kolay ve Net Adımlar</span>
+                <h2>Çalışma Şeklimiz</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">Hijyen sürecimizi 4 basit ve şeffaf adımda yönetiyoruz:</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>Talep & Keşif</h3>
+                        <p>Bizimle iletişime geçersiniz. İhtiyacınızı dinler ve gerekirse yerinde ücretsiz keşif yaparız.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h3>Planlama & Teklif</h3>
+                        <p>Alanın büyüklüğüne ve işin zorluğuna göre en optimum fiyat ve takvimi belirleriz.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <h3>Detaylı Uygulama</h3>
+                        <p>Belirlenen gün ve saatte, uzman ekibimiz ve son teknoloji ekipmanlarımızla işe başlarız.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Kontrol & Teslim</h3>
+                        <p>Temizlik sonrasında alanı sizinle birlikte kontrol eder, tam onayınızla teslim ederiz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- İletişim Section -->
+    <section class="contact-section" id="iletisim">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Bize Ulaşın</span>
+                <h2>İletişim</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">Sorularınız veya hizmet talepleriniz için bize ulaşabilirsiniz.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel">
+                    <span class="info-label">İletişim Bilgileri</span>
+                    <h3>Hemen Ulaşın</h3>
+                    <p class="info-intro">Profesyonel temizlik hizmeti almak veya fiyat teklifi almak için bize ulaşın. Size en kısa sürede dönüş yapacağız.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <span>Adres</span>
+                                <p>Caferağa Mah. General Asım Gündüz Cad. No: 62 Bahariye Plaza Kadıköy / İstanbul</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <span>Telefon</span>
+                                <a href="tel:+905453477966">+90 545 347 79 66</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="info-text">
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/905453477966" target="_blank">+90 545 347 79 66</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel">
+                    <h3>Mesaj Gönderin</h3>
+                    <p>Aşağıdaki formu doldurarak bize ulaşabilirsiniz.</p>
+                    
+                    <form id="contact-form" class="main-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-name">Adınız Soyadınız *</label>
+                                <input type="text" id="form-name" placeholder="Örn: Ahmet Yılmaz" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Telefon Numaranız *</label>
+                                <input type="tel" id="form-phone" placeholder="Örn: 0532 123 45 67" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">E-posta Adresiniz</label>
+                            <input type="email" id="form-email" placeholder="Örn: ornek@eposta.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service">Hizmet Türü *</label>
+                            <select id="form-service" required>
+                                <option value="" disabled selected>Hizmet türü seçiniz...</option>
+                                <option value="ev">Ev Temizliği</option>
+                                <option value="apartman">Apartman ve Site Temizliği</option>
+                                <option value="santiye">Şantiye ve İnşaat Sonrası Temizlik</option>
+                                <option value="ticari">AVM, Mağaza ve Dükkan Temizliği</option>
+                                <option value="diger">Diğer / Genel Soru</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Mesajınız *</label>
+                            <textarea id="form-message" placeholder="Taleplerinizi ve temizlenmesini istediğiniz alanı anlatınız..." rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Gönder <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div id="form-status" class="form-status-message"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Teklif Al Modal (Popup Form) -->
+    <div class="modal-wrapper" id="teklif-modal">
+        <div class="modal-content modal-content-large">
+            <button class="modal-close" id="teklif-close-btn">&times;</button>
+            <div class="modal-header-section text-center">
+                <div class="modal-icon"><i class="fa-solid fa-calculator"></i></div>
+                <h3>Hemen Fiyat Teklifi Alın</h3>
+                <p>Temizlenecek alanın detaylarını girin, size özel fiyat teklifimizi hazırlayalım.</p>
+            </div>
+            <div class="modal-body-section">
+                <form id="teklif-form">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="teklif-name">Adınız Soyadınız *</label>
+                            <input type="text" id="teklif-name" required placeholder="İsim Soyisim">
+                        </div>
+                        <div class="form-group">
+                            <label for="teklif-phone">Telefon Numaranız *</label>
+                            <input type="tel" id="teklif-phone" required placeholder="05XX XXX XX XX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="teklif-service">Talep Edilen Hizmet *</label>
+                            <select id="teklif-service" required>
+                                <option value="" disabled selected>Hizmet Seçiniz</option>
+                                <option value="ev">Ev Temizliği</option>
+                                <option value="apartman">Apartman ve Site Temizliği</option>
+                                <option value="santiye">Şantiye ve İnşaat Sonrası Temizlik</option>
+                                <option value="ticari">AVM, Mağaza ve Dükkan Temizliği</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teklif-size">Tahmini Alan Büyüklüğü (m²)</label>
+                            <input type="number" id="teklif-size" placeholder="Örn: 120">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teklif-details">Ekstra Detaylar veya Talepler</label>
+                        <textarea id="teklif-details" rows="3" placeholder="Örn: Boş ev temizliği, koltuk yıkama dahil olsun vb..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Hesapla ve Gönder <i class="fa-solid fa-wand-magic-sparkles"></i></button>
+                </form>
+                <div id="teklif-status" class="form-status-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <a href="#" class="footer-logo-link">
+                    <div class="custom-logo">
+                        <svg class="brand-logo-svg" width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0d9488" />
+                                    <stop offset="50%" stop-color="#14b8a6" />
+                                    <stop offset="100%" stop-color="#ffd700" />
+                                </linearGradient>
+                                <filter id="logoGlowFoot" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="2" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+                            <path d="M 50,5 A 45,45 0 1,0 95,50 A 45,45 0 0,0 50,5 Z" fill="none" stroke="url(#logoGradFoot)" stroke-width="6" stroke-dasharray="280" stroke-dashoffset="0" />
+                            <path d="M 35,50 H 65 M 50,35 V 65" stroke="url(#logoGradFoot)" stroke-width="8" stroke-linecap="round" />
+                            <path d="M 72,18 L 74,24 L 80,26 L 74,28 L 72,34 L 70,28 L 64,26 L 70,24 Z" fill="#ffd700" filter="url(#logoGlowFoot)" />
+                        </svg>
+                        <span class="logo-text">Plus <span class="logo-highlight">Group</span></span>
+                    </div>
+                </a>
+                <p class="footer-slogan">"Temiz alanlar, mutlu yüzler yaratır."</p>
+                <p class="footer-about-brief">Boutique ekibimiz, doğa dostu ürünlerimiz ve son teknoloji ekipmanlarımızla her yaşam alanını parlatıyoruz.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="#anasayfa">Anasayfa</a></li>
+                    <li><a href="#hakkimizda">Hikayemiz</a></li>
+                    <li><a href="#hizmetler">Hizmetler</a></li>
+                    <li><a href="#surec">Çalışma Şeklimiz</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col services-links-col">
+                <h4>Çözümlerimiz</h4>
+                <ul>
+                    <li><a href="#hizmetler" onclick="openServiceModal('ev')">Ev Temizliği</a></li>
+                    <li><a href="#hizmetler" onclick="openServiceModal('apartman')">Apartman & Site Temizliği</a></li>
+                    <li><a href="#hizmetler" onclick="openServiceModal('santiye')">Şantiye Temizliği</a></li>
+                    <li><a href="#hizmetler" onclick="openServiceModal('ticari')">AVM & Mağaza Temizliği</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-links-col">
+                <h4>İletişim</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Caferağa Mah. General Asım Gündüz Cad. No: 62 Bahariye Plaza Kadıköy / İstanbul</li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+905453477966">+90 545 347 79 66</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/905453477966" target="_blank">WhatsApp Hattı</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Plus Group Temizlik. Tüm Hakları Saklıdır.</p>
+                <p>Tasarım: <span class="designer-text">Boutique Digital</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/905453477966" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp İletişim Hattı">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">Müşteri Hattı</div>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
